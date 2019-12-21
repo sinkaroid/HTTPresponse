@@ -1,3 +1,6 @@
+#!/bin/bash
+#sin
+
 GREEN=$(tput setaf 2)
 RED=$(tput setaf 1) 
 CYAN=$(tput setaf 6) 
@@ -14,7 +17,7 @@ echo -e "${RED}
                                             |_|mass http checker // webshells checker"
 read -p "${WHITE}raw list: " raw 
 echo -e "\n"
-read -p "${WHITE}${raw} Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+
 
 #do here
 wget -q -nv -O bajing.txt ${raw};
