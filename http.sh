@@ -11,5 +11,5 @@ read -r raw
 wget -q -nv -O bajing.txt ${raw};
 cat bajing.txt | sed 's/htt/curl -LI htt/' | sed "s/$/ -o \/dev\/null -w '%{http_code} => %{url_effective}\n' -s/" > mek.sh
 
-./mek.sh > dog.txt;python kanna.py | rm bajing.txt mek.sh dog.txt;
+./mek.sh > dog.txt;python kanna.py;
 #i create this args send output through hook instead, change with ./basename(__FILE__) if only on your console, not discord

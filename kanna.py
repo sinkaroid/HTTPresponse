@@ -12,6 +12,5 @@ file = open("C:/Python37/hook/dog.txt", "r")
  
 message = file.read()
 
-POSTedJSON =  json.dumps ( {"content":message} )
-
+POSTedJSON =  json.dumps ( {"content":message} ) 
 r = requests.post(baseURL, headers = headers, data = POSTedJSON)
